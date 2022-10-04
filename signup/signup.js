@@ -28,6 +28,7 @@ btnsubmit.addEventListener("click", (e) => {
         email1.value = "";
         phonenumber1.value = "";
         pwd1.value = "";
+        location.replace("../login/login.html");
       } else {
         if (
           result.data.errors[0].message == "phonenumber must be unique" ||
