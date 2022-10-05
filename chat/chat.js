@@ -40,8 +40,9 @@ sendmsg.addEventListener('click', (e) => {
   })
 });
 
-
-  axios.get("http://localhost:3000/getmessages", {
+setInterval(() => {
+  axios
+    .get("http://localhost:3000/getmessages", {
       headers: { authorization: token },
     })
     .then((result) => {
@@ -74,7 +75,8 @@ sendmsg.addEventListener('click', (e) => {
       console.log(err);
     });
 
-
+  
+},1000);
 
 signout.addEventListener('click', () => {
 
