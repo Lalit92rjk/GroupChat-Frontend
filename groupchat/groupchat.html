@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>group chat</title>
+  
+</head>
+<body>
+  <div id="headgrps">
+    <h6 id="grpname" class="text-white"></h6>
+    <input type="text" name="search" id="searchinp" placeholder="🔎︎"/>
+    <h6 id="signoutgrp">Sign Out</h6>
+  </div>
+  <!-- add people -->
+    
+    <div class="addpeople ">
+      <div class="addform text-center">
+        <h6 class="text-white my-3">add to group</h6>
+        <input type="text" id="personemail" class="form-control" placeholder="enter email">
+        <select name="" id="adminvalue"class='form-control'>
+          <option value="false">admin:false</option>
+          <option value="true">admin:true</option>
+        </select>
+              
+        <button id="addtogroup">add participants</button>
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="listofgroups">
+      <h6 class="text-dark text-center list2">participants in the group</h6>
+      <div class="grpparticipants"> 
+      </div>
+      <h6 >
+        list of groups you are part of
+      </h6>
+
+      <div class="listofgrps text-center mt-2"></div>
+    </div>
+
+    <!--  -->
+    <div class="groupmsgs">
+      <h5 class="text-center grpheading">group chat</h5>
+      <div class="groupmessages">
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="msgbar text-center">
+      <div class="msg">
+        <i class="fa-solid fa-message fa-lg"></i>
+        <input type="text" id="inptext" />
+        <button class="sendmsg">Send</button>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+    <script src="./groupchat.js"></script>
+  </body>
+</html>
