@@ -207,8 +207,7 @@ grpdat();
 groupparticipants.addEventListener('click', (e) => {
      let id = location.href.split("g=")[1];
 
-
-  if(e.target.classList.contains('makeadmin')){
+    if(e.target.classList.contains('makeadmin')){
 
     let idd = e.target.id;
     let obj = {
